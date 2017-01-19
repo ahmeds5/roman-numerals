@@ -1,6 +1,6 @@
 //Business Logic
-var numerals = ["I", "V", "X", "L", "C", "D", "M"];
-var values = [1, 5, 10, 50, 100, 500, 1000];
+var numerals = ["I", "IV", "V", "IX", "X", "XL", "L", "LC", "C", "CD", "D", "DM", "M"];
+var values = [1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1000];
 
 function toNumeral(userNumber) {
   for(i=0; i<userNumber; i++){
