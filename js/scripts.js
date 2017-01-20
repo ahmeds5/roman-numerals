@@ -1,7 +1,5 @@
 //Business Logic
 
-
-
 function toNumeral(userNumber) {
   var result= "";
   if(userNumber>0 && userNumber<4) {
@@ -19,9 +17,18 @@ function toNumeral(userNumber) {
 
   if(userNumber===10) {
     return("X");
-} else if (userNumber>10 && userNumber<20) {
+} else if (userNumber>10 && userNumber<40) {
     return("X" + toNumeral(userNumber-10));
 }
+  if(userNumber===40) {
+    return("XL");
+} else if (userNumber===50) {
+    return("L");
+} else if(userNumber>40 && userNumber<50) {
+    return("XL"+ toNumeral(userNumber-40));
+} else if(userNumber>50 && userNumber<90)
+    return("L" + toNumeral(userNumber-50));
+
   return result;
 };
 
