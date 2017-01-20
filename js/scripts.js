@@ -16,6 +16,12 @@ function toNumeral(userNumber) {
 } else if(userNumber===9) {
     return("IX");
 }
+
+  if(userNumber===10) {
+    return("X");
+} else if (userNumber>10 && userNumber<20) {
+    return("X" + toNumeral(userNumber-10));
+}
   return result;
 };
 
