@@ -13,14 +13,11 @@ function toNumeral(userNumber) {
     return("V"+ toNumeral(userNumber-5));
 } else if(userNumber===9) {
     return("IX");
-}
-
-  if(userNumber===10) {
+} else if(userNumber===10) {
     return("X");
 } else if (userNumber>10 && userNumber<40) {
     return("X" + toNumeral(userNumber-10));
-}
-  if(userNumber===40) {
+} else if(userNumber===40) {
     return("XL");
 } else if (userNumber===50) {
     return("L");
